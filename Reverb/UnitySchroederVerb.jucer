@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="BDsqkX" name="UnitySchroederVerb" projectType="audioplug"
+              jucerVersion="5.4.1" headerPath="F:\Development\JUCE\JUCEprojects\UnitySchroederVerb\Source&#10;F:\Development\JUCE\JUCEprojects\UnitySchroederVerb\Source\iir"
+              pluginFormats="buildAU,buildStandalone,buildUnity,buildVST3">
+  <MAINGROUP id="nnh9G9" name="UnitySchroederVerb">
+    <GROUP id="{7E73881A-4352-2123-48E7-2DA2069807C3}" name="Source">
+      <FILE id="MKc69a" name="DelayLine.cpp" compile="1" resource="0" file="Source/DelayLine.cpp"/>
+      <FILE id="LxSJLm" name="DelayLine.h" compile="0" resource="0" file="Source/DelayLine.h"/>
+      <FILE id="wCNmM3" name="Iir.h" compile="0" resource="0" file="Source/Iir.h"/>
+      <FILE id="ftcfOt" name="Schroeder.cpp" compile="1" resource="0" file="Source/Schroeder.cpp"/>
+      <FILE id="yLiiQB" name="Schroeder.h" compile="0" resource="0" file="Source/Schroeder.h"/>
+      <GROUP id="{F8BA3CE4-BCCB-6D53-0959-5D2867A42546}" name="iir">
+        <FILE id="W5AKRb" name="Biquad.cpp" compile="1" resource="0" file="Source/iir/Biquad.cpp"/>
+        <FILE id="HU3R8H" name="Biquad.h" compile="0" resource="0" file="Source/iir/Biquad.h"/>
+        <FILE id="s2Wz0h" name="Butterworth.cpp" compile="1" resource="0" file="Source/iir/Butterworth.cpp"/>
+        <FILE id="w9vpSD" name="Butterworth.h" compile="0" resource="0" file="Source/iir/Butterworth.h"/>
+        <FILE id="PiF8wH" name="Cascade.cpp" compile="1" resource="0" file="Source/iir/Cascade.cpp"/>
+        <FILE id="ib5oSQ" name="Cascade.h" compile="0" resource="0" file="Source/iir/Cascade.h"/>
+        <FILE id="OGZfoy" name="ChebyshevI.cpp" compile="1" resource="0" file="Source/iir/ChebyshevI.cpp"/>
+        <FILE id="Wu4jn8" name="ChebyshevI.h" compile="0" resource="0" file="Source/iir/ChebyshevI.h"/>
+        <FILE id="J2ALVP" name="ChebyshevII.cpp" compile="1" resource="0" file="Source/iir/ChebyshevII.cpp"/>
+        <FILE id="RCbW7E" name="ChebyshevII.h" compile="0" resource="0" file="Source/iir/ChebyshevII.h"/>
+        <FILE id="imCall" name="Common.h" compile="0" resource="0" file="Source/iir/Common.h"/>
+        <FILE id="MhbaXz" name="Custom.cpp" compile="1" resource="0" file="Source/iir/Custom.cpp"/>
+        <FILE id="ZqwuTY" name="Custom.h" compile="0" resource="0" file="Source/iir/Custom.h"/>
+        <FILE id="YTptuk" name="Layout.h" compile="0" resource="0" file="Source/iir/Layout.h"/>
+        <FILE id="PkKu0i" name="MathSupplement.h" compile="0" resource="0"
+              file="Source/iir/MathSupplement.h"/>
+        <FILE id="pGvbUi" name="PoleFilter.cpp" compile="1" resource="0" file="Source/iir/PoleFilter.cpp"/>
+        <FILE id="Hl09bT" name="PoleFilter.h" compile="0" resource="0" file="Source/iir/PoleFilter.h"/>
+        <FILE id="YUlUz8" name="RBJ.cpp" compile="1" resource="0" file="Source/iir/RBJ.cpp"/>
+        <FILE id="tkqJAE" name="RBJ.h" compile="0" resource="0" file="Source/iir/RBJ.h"/>
+        <FILE id="TYhxUU" name="State.cpp" compile="1" resource="0" file="Source/iir/State.cpp"/>
+        <FILE id="OTOzTp" name="State.h" compile="0" resource="0" file="Source/iir/State.h"/>
+        <FILE id="KNioNN" name="Types.h" compile="0" resource="0" file="Source/iir/Types.h"/>
+      </GROUP>
+      <FILE id="WClRct" name="AllPass.cpp" compile="1" resource="0" file="Source/AllPass.cpp"/>
+      <FILE id="ACXPil" name="AllPass.h" compile="0" resource="0" file="Source/AllPass.h"/>
+      <FILE id="GBAeNB" name="Comb.cpp" compile="1" resource="0" file="Source/Comb.cpp"/>
+      <FILE id="Hc8LdW" name="Comb.h" compile="0" resource="0" file="Source/Comb.h"/>
+      <FILE id="cSsB07" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="AhB0qB" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="uH8Yxf" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="EUS8Iz" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+        <MODULEPATH id="juce_video" path="../../modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
