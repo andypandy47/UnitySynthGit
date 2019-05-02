@@ -52,8 +52,6 @@ Synthesizer_v1AudioProcessor::Synthesizer_v1AudioProcessor()
 	releaseAmount->addListener(this);
 
 	addParameter(masterVolume = new AudioParameterFloat("masterVolume", "MasterVolume", NormalisableRange<float>(0.0f, 1.0f), 0.5f));
-
-	addParameter(processBlockEngaged = new AudioParameterFloat("processBlockEngaged", "processBlockEngaged", NormalisableRange<float>(0.0f, 1.0f), 0.0f));
 	
 	m_MySynth_01.clearVoices();
 

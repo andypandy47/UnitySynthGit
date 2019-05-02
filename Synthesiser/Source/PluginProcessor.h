@@ -93,14 +93,8 @@ public:
 	AudioParameterFloat* decayAmount;
 	AudioParameterFloat* sustainAmount;
 	AudioParameterFloat* releaseAmount;
-
-	AudioParameterFloat* chorusOnOff;
-	AudioParameterFloat* chorusAmount;
 	
-
 	AudioParameterFloat* masterVolume;
-
-	AudioParameterFloat* processBlockEngaged;
 
 private:
 	SynthVoice* m_MyVoice_01;
