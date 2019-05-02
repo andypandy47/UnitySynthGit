@@ -55,29 +55,12 @@ UnityDelayAudioProcessor::~UnityDelayAudioProcessor()
 
 void UnityDelayAudioProcessor::cookVariables()
 {
-	/*m_fFeedback = fFeedback_pct / 100;
-	m_fWetLevel = fWetLevel_pct / 100;
-	m_fDelayInSamples = fDelayInMS * ((float)m_SampleRate / 1000);
-
-	//subtract to make read index
-	m_ReadIndex = m_WriteIndex - (int)m_fDelayInSamples; //cast as an int for correct buffer position
-
-	//check and wrap BACKWARDS if the index is negative
-	if (m_ReadIndex < 0)
-		m_ReadIndex += m_BufferSize; //amount of wrap is Read + Length*/
 	m_lDelay.cookVariables(fDelayInMS, fFeedback_pct, fWetLevel_pct, m_SampleRate);
 	m_rDelay.cookVariables(fDelayInMS, fFeedback_pct, fWetLevel_pct, m_SampleRate);
 }
 
 void UnityDelayAudioProcessor::resetDelay()
 {
-	/*//flush buffer
-	if (m_dBuffer)
-		memset(m_dBuffer, 0, m_BufferSize * sizeof(float));
-
-	//init read/write indices
-	m_WriteIndex = 0;
-	m_ReadIndex = 0;*/
 	m_lDelay.reset();
 	m_rDelay.reset();
 }
@@ -147,12 +130,6 @@ void UnityDelayAudioProcessor::changeProgramName (int index, const String& newNa
 //==============================================================================
 void UnityDelayAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
-	/*m_SampleRate = sampleRate;
-	
-	m_BufferSize = 2 * m_SampleRate; //for a 2 second delay
-	if (m_dBuffer)
-		delete[] m_dBuffer;
-	m_dBuffer = new float[m_BufferSize];*/
 	m_lDelay.prepareDelay();
 	m_rDelay.prepareDelay();
 
@@ -278,7 +255,6 @@ void UnityDelayAudioProcessor::parameterValueChanged(int parameterIndex, float n
 {
 	if (parameterIndex == 0)
 	{
-		//Logger::getCurrentLogger()->writeToLog("delayTime is changing");
 		fDelayInMS = convertParamRange(newValue, 0.0f, 2000.0f);
 	}
 	else if (parameterIndex == 1)
