@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2017
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitySynth_Akay - Standalone Plugin", "UnitySynth_Akay_StandalonePlugin.vcxproj", "{2556EBE2-A8B3-9C31-6171-CFE71E933644}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B} = {C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitySynth_Akay - VST3", "UnitySynth_Akay_VST3.vcxproj", "{B64AA233-5ED6-6569-7947-1B912FF2B4F3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B} = {C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitySynth_Akay - Unity Plugin", "UnitySynth_Akay_UnityPlugin.vcxproj", "{2977EDD5-9899-373B-EDE3-DF85A367D9A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B} = {C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitySynth_Akay - Shared Code", "UnitySynth_Akay_SharedCode.vcxproj", "{C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64AA233-5ED6-6569-7947-1B912FF2B4F3}.Debug|x64.ActiveCfg = Debug|x64
+		{B64AA233-5ED6-6569-7947-1B912FF2B4F3}.Debug|x64.Build.0 = Debug|x64
+		{B64AA233-5ED6-6569-7947-1B912FF2B4F3}.Release|x64.ActiveCfg = Release|x64
+		{B64AA233-5ED6-6569-7947-1B912FF2B4F3}.Release|x64.Build.0 = Release|x64
+		{2556EBE2-A8B3-9C31-6171-CFE71E933644}.Debug|x64.ActiveCfg = Debug|x64
+		{2556EBE2-A8B3-9C31-6171-CFE71E933644}.Debug|x64.Build.0 = Debug|x64
+		{2556EBE2-A8B3-9C31-6171-CFE71E933644}.Release|x64.ActiveCfg = Release|x64
+		{2556EBE2-A8B3-9C31-6171-CFE71E933644}.Release|x64.Build.0 = Release|x64
+		{2977EDD5-9899-373B-EDE3-DF85A367D9A5}.Debug|x64.ActiveCfg = Debug|x64
+		{2977EDD5-9899-373B-EDE3-DF85A367D9A5}.Debug|x64.Build.0 = Debug|x64
+		{2977EDD5-9899-373B-EDE3-DF85A367D9A5}.Release|x64.ActiveCfg = Release|x64
+		{2977EDD5-9899-373B-EDE3-DF85A367D9A5}.Release|x64.Build.0 = Release|x64
+		{C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B}.Debug|x64.ActiveCfg = Debug|x64
+		{C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B}.Debug|x64.Build.0 = Debug|x64
+		{C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B}.Release|x64.ActiveCfg = Release|x64
+		{C99CDD9F-F9C6-3EE4-154B-3BFD4A80F46B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
